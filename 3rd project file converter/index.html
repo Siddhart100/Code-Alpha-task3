@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Converter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    #input-file {
+      margin-bottom: 10px;
+    }
+    #output-format {
+      margin-bottom: 10px;
+    }
+    #output {
+      display: none;
+      margin-top: 20px;
+    }
+    #output img {
+      max-width: 300px;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>File Converter</h1>
+  <input type="file" id="input-file">
+  <div>
+    <label for="output-format">Output Format:</label>
+    <select id="output-format">
+      <option value="jpeg">JPEG</option>
+      <option value="png">PNG</option>
+    </select>
+  </div>
+  <button onclick="convertFile()">Convert</button>
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
